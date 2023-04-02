@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Επαφές</title>
+    <link rel="stylesheet" href="./contacts.css">
+</head>
+<body>
+    <div class="outer">
+
+        <div class="menu">
+            <ul>
+                <li><a class="insert-link" href="">Εισαγωγή Επαφής</a></li>
+                <li><a class="search-link" href="">Αναζήτηση Επαφής</a></li>
+                <li><a class="showall-link" href="">Προβολή επαφών</a></li>
+            </ul>
+        </div>
+
+
+        <form action="" class="insert-contact-form hidden">
+            <section>
+                <h2>Εισαγωγή Επαφής</h2>
+                    <fieldset>
+                        <legend>Στοιχεία επαφής</legend>
+                        <div>
+                            <label for="firstname">Όνομα: </label>
+                            <input type="text" name="" id="firstname" size="30" maxlength="30" autofocus>
+                        </div>
+                        <div>
+                            <label for="lastname">Επώνυμο: </label>
+                            <input type="text"  name="" id="lastname" size="30" maxlength="30">
+                        </div>
+                        <div>
+                            <label for="phoneNumber">Τηλέφωνο: </label>
+                            <input type="text"  name="" id="phoneNumber" size="20" maxlength="15">
+                        </div>
+                    </fieldset>
+
+                    <div class="btn-wrapper">
+                        <button id="btn" type="button">Αποστολή</button>
+                    </div>
+            </section>    
+        </form>
+
+        <div class="search-wrapper hidden">
+            <form action="">
+                <input type="text" id="searchInput" class="search rounded" 
+                placeholder="Πληκτρολογήστε ένα τηλέφωνο" autofocus> 
+            </form>
+        </div>
+
+    </div>    
+
+    <table class="contacts-table">
+                
+    </table>
+
+    <div class="not-found m-top hidden">
+            <span>Δεν βρέθηκαν επαφές σύμφωνα με τα κριτήρια αναζήτης</span>
+    </div>
+
+    <div class="found-identical m-top hidden">
+            <span>Βρέθηκαν επαφές με το ίδιο τηλέφωνο</span>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" 
+    integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./contacts.js"></script>
+</body>
+</html>
